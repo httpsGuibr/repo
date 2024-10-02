@@ -1,0 +1,101 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer 2</title>
+
+    <style>
+        footer{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            width: 90%;
+            bottom: 0;
+            align-items: center;
+            padding-left: 60px;
+        }
+        nav{
+            background-color: rgb(44, 202, 104);
+            border-radius: 10px;
+            text-align: center;
+
+        }
+        nav ul {
+            display: inline-flex;
+            list-style: none;
+        }
+        nav ul li:hover{
+            background-color: rgb(11, 90, 53);
+            border-radius: 5px;
+            box-sizing: 20px;
+            
+        }
+        nav ul li {
+            width: 140px;
+            margin: 15px;
+            padding: auto;
+        }
+        nav ul li a {
+          text-decoration: none;
+          color: aliceblue;
+        }
+
+        .sub-menu {
+            display: none;
+        }
+        nav ul li:hover .sub-menu{
+            display: block;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: -38px;
+            background-color: blueviolet;
+            border-radius: 10px;
+        }
+
+       
+        nav ul li:hover .sub-menu ul li{
+            width: 150px;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.7s;
+        }
+        
+         nav ul li:hover .sub-menu ul{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> modelo de rodapé</h1>
+    <footer>
+        <p>siga nas redes sociais</p>
+        <a href="#">Facebook</a>
+        <a href="#">orkut</a>
+        <P><a href="#">email@gmail.com</a></P>
+    </footer>
+</body>
+</html>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="#">INICIO</a></li>
+                <li> <a href="#">PRODUTOS</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li> <a href="#">ELETRONICO</a></li>
+                        <li> <a href="#">COMPUTADOR</a></li>
+                        <li> <a href="#">CELULAR</a></li>
+                    </ul>
+                </div>
+                </li>
+                    <li> <a href="#">SERVICOS</a></li>
+                    <li> <a href="#">ASSISTENCIA</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
