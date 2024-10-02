@@ -1,0 +1,11 @@
+#titulo-principal{
+    background-color: aliceblue;
+}
+.basico{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.intermed{
+    font-size: large;
+    color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+}
