@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarLog - Registros para Oficinas Mecânicas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Biblioteca jsPDF e AutoTable -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.20/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>CarLog - Registros para Oficinas Mecânicas</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Adicionar Registro de Manutenção</h2>
+            <form id="maintenance-form">
+                <label for="client">Cliente:</label>
+                <input type="text" id="client" name="client" required>
+
+                <label for="service">Tipo de Serviço:</label>
+                <input type="text" id="service" name="service" required>
+
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="cost">Custo (R$):</label>
+                <input type="number" id="cost" name="cost" required>
+
+                <button type="submit">Adicionar ordem de serviço</button>
+                <button id="generate-pdf">Gerar PDF</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Registros de Manutenção</h2>
+            <table id="maintenance-table">
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Serviço</th>
+                        <th>Data</th>
+                        <th>Custo (R$)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os registros serão inseridos aqui dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CarLog. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
